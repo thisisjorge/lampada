@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lâmpada</title>
+    <title>Lâmpada Interativa com Som</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <img id="lamp" src="lamp_off.png" alt="Lâmpada apagada">
+        <img id="lamp" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/lamp_off-zF07L6jLy3fOrj1JXyjbtBB5BMCq5X.png" alt="Lâmpada apagada">
+        <div class="instructions">
+            <p id="instruction-text">Clique na lâmpada para ligar</p>
+        </div>
     </div>
+
+    <!-- Elementos de áudio com os nomes corretos dos arquivos -->
+    <audio id="sound-on" preload="auto">
+        <source src="sounds/lamp-on.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="sound-off" preload="auto">
+        <source src="sounds/lamp-off.mp3" type="audio/mpeg">
+    </audio>
+
     <script src="script.js"></script>
 </body>
 </html>
